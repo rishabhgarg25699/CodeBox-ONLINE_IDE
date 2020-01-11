@@ -1,11 +1,15 @@
 const express = require('express');
 const server = express()
+const todo = require('./Backend/hackerearth');
+
 var port = process.env.PORT || 9000;
 
 server.use(express.json);
 server.use(express.urlencoded({ extended: true }));
 
-server.get('/', express.static(__dirname + "/Frontend"));
+server.use('/', express.static(__dirname + "/Frontend"));
+
+server.use('/todo', todo);
 
 server.get('/trial', function (req, res) {
     res.send("Hello World");
