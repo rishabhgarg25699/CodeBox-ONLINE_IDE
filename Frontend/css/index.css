@@ -1,0 +1,52 @@
+#editor {
+    position: absolute;
+    top: 85px;
+    right: 1000;
+    left: 1000;
+    width: 850px;
+    height: 500px;
+    font-size: large;
+    border: 3px solid #73AD21;
+}
+
+#input {
+    position: absolute;
+    top: 85px;
+    right: 0;
+    left: 1000px;
+    width: 300px;
+    height: 200px;
+    border: 3px solid rgb(173, 42, 33);
+}
+
+#output {
+    position: absolute;
+    top: 375px;
+    right: 0;
+    left: 1000px;
+    width: 300px;
+    height: 200px;
+    border: 3px solid rgb(173, 42, 33);
+}
+
+#first_button {
+    position: absolute;
+    border: 3px solid blue;
+    left: 1030px;
+    top: 320px;
+    font-size: 18px;
+    color: blue;
+    background-color: #e7e7e7;
+    color: black;
+}
+
+#second_button {
+    position: absolute;
+    border: 3px solid blue;
+    left: 1150px;
+    top: 320px;
+    font-size: 18px;
+    color: blue;
+    background-color: #e7e7e7;
+    color: black;
+}
