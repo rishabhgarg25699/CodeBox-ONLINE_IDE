@@ -4,6 +4,7 @@ let code = [];
 
 console.log("Hackerearth.js 1");
 
+
 route.get('/', function (req, res) {
     res.send(code);
 })
