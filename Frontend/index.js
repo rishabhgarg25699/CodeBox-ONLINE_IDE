@@ -6,6 +6,7 @@ $("#first_button").click(function () {
     let code = editor.getValue();
     $.post('/todo/', { task: code }, function (data) {
         console.log("----------------------index.js------------------------------------" + data);
+        console.log(data);
     })
 })
 

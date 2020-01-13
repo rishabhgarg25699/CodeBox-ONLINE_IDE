@@ -10,18 +10,17 @@ config.language = "C++";
 
 function compile(code) {
     config.source = code;
-    hackerearth.compile(config, function (err, response) {
+    hackerearth.compile(config, function (err, res) {
         if (err) {
             //deal with error
             console.log("-----------------Error in Compiling---------------------")
             console.log(err);
-            response.send(err);
-
+            res.send(err);
         } else {
             console.log("-------------------Compile ho gaya bhaya ----------------------");
             //deal with response
-            console.log("Compiled Succesfully" + response);
-            response.send("1");
+            console.log("Compiled Succesfully " + JSON.parse(res));
+            res.send(JSON.parse(res));
         }
     });
 }
@@ -36,7 +35,7 @@ function run(code) {
             response.send(err);
         } else {
             //deal with response
-            console.log("--------------------Run ho gaya hai bhaya");
+            console.log("--------------------Run ho gaya hai bhaya--------------");
             console.log(response);
             response.send(response);
         }
