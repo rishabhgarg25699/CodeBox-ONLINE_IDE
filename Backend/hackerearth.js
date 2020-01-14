@@ -8,28 +8,36 @@ route.get('/', function (req, res) {
 
 route.post('/', async function (req, res) {
     code = req.body.task;
-    let result = await main.compile(code);
+    input = req.body.input;
+
+    let result = await main.compile(code, input);
     if (result.status === 0) {
         console.log("error while compiling the code");
-
+        res.send(result.final);
     }
     else if (result.status === 1) {
         console.log("compiled with errors in code");
+        res.send(result.final);
     }
     else {
-        console.log("successfully compile");
-        let result2 = await main.run(code);
+        console.log("--------------successfully compile---------------");
+        console.log(result);
+        let result2 = await main.run(code, input);
         if (result2.status === 0) {
             console.log("error while running the code");
+            res.send(result2.final);
         }
-        else if (result2.status == 1) {
+        else if (result2.status === 1) {
             console.log("run with errors in code");
+            res.send(result2.final);
         }
         else {
-            console.log("successfully run");
+            console.log("-------------------successfully run---------------------");
+            console.log(result2.final);
+            res.send(result2.final);
         }
     }
-    res.end();
+    // res.end();
 })
 
 module.exports = route;

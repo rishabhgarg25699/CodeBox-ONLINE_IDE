@@ -4,64 +4,51 @@ var hackerearth = new hackerearth('203157672c819e6d5ca8ace68ad81fbe08758ba6');
 var config = {};
 config.time_limit = 2;
 config.memory_limit = 323244;
-// config.source = "print 'Hello World'"
-config.input = "";
+// config.input = "";
 config.language = "C++";
 
-async function compile(code) {
+async function compile(code, input) {
     try {
         config.source = code;
+        config.input = input;
         let result = JSON.parse(await hackerearth.compile(config));
-        console.log(result);
-        console.log("-------------------Compile ho gaya bhaya ----------------------");
         if (result.compile_status == "OK") {
-            console.log("-------Compiled Successfully-----");
-            // run the code right here.....
-            // define your own status codes .... 2 is for compiled and run..
-            return { "status": 2 };
+            return { "status": 2, "final": result };
+            // return (result);
         }
         else {
-            // compiled with errors in code....
-            return { "status": 1 };
+            return { "status": 1, "final": result };
         }
-
     }
     catch (err) {
         console.log(err);
-        //error while compling the code ....
-        return { "status": 0 };
+        return { "status": 0, "final": result };
     }
 }
 
-async function run(code) {
+async function run(code, input) {
     try {
         config.source = code;
+        config.input = input;
         let result = JSON.parse(await hackerearth.run(config));
-        console.log(result);
-        console.log("-------------------Run ho gaya bhaya ----------------------");
         if (result.run_status.status == "AC") {
-            console.log("-------Run Successfully-----");
-            return { "status": 2 };
+            return { "status": 2, "final": result };
+            // return (result);
         }
         else {
-            return { "status": 1 };
+            return { "status": 1, "final": result };
         }
 
     }
     catch (err) {
         console.log(err);
-        return { "status": 0 };
+        return { "status": 0, "final": result };
     }
 }
-
-
 exports = module.exports = {
     compile,
     run
 }
-
-
-
 
 // function compile(code, req, res, callback) {
 //     config.source = code;
