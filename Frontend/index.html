@@ -6,11 +6,6 @@
     <link href="css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="jquery-3.4.1.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#out_text").load("cplusplus.txt");
-        });
-    </script>
 </head>
 
 <body style="background-color: burlywood;" class="container">
@@ -20,16 +15,32 @@
     </center>
     <center>
         <!-- EDITOR ID IS HERE -->
-        <div id="editor">
-            knvdkn
-            <div id="out_text"></div>
-        </div>
+        <div id="editor">#include&#x3c;bits/stdc++.h&#x3e;
+using namespace std;
+#define ll long long int
+#define pb push_back
+#define mp make_pair
+#define nt _int128
+#define inf (int)1e9
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    ll t;
+    // cin >> t;
+    t = 1;
+    while(t--)
+    {
+
+    }
+    return 0;
+}</div>
     </center>
     <textarea type="textbabel-polyfill" id="input" placeholder="Enter input here"></textarea>
     <textarea type="text" id="output" placeholder="Output will go here"></textarea>
     <button type="button" class="btn btn-success" id="first_button">Compile And Run Program</button>
-    <!-- <button type="button" class="btn btn-success" id="second_button">Run Program</button> -->
-    <br>
+    
     <script src="app.js" type="text/javascript" charset="utf-8"></script>
     <script src="index.js"> </script>
 </body>

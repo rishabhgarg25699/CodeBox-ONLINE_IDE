@@ -2,7 +2,7 @@ const express = require('express');
 const server = express()
 const todo = require('./Backend/hackerearth');
 
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 2000;
 
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));

@@ -5,8 +5,6 @@ let inputbox = $('#input');
 let outputbox = $('#output');
 let wait = "Please wait, Your code is in process phase .......";
 
-
-
 $("#first_button").click(function () {
     let code = editor.getValue();
     let input1 = inputbox.val();
@@ -14,10 +12,17 @@ $("#first_button").click(function () {
     outputbox.append(wait);
     // console.log(input);
     $.post('/todo/', { task: code, input: input1 }, function (data) {
+        console.log("--------------------------");
         console.log(data);
-        console.log(data.run_status.output);
-        outputbox.empty();
-        outputbox.append(data.run_status.output);
+        // console.log(data.run_status.output);
+        if (data.compile_status === "OK") {
+            outputbox.empty();
+            outputbox.append(data.run_status.output);
+        }
+        else {
+            outputbox.empty();
+            outputbox.append(data.compile_status);
+        }
     })
 })
 

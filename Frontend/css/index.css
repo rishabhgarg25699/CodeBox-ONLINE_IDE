@@ -15,17 +15,17 @@
     right: 0;
     left: 1000px;
     width: 300px;
-    height: 200px;
+    height: 150px;
     border: 3px solid rgb(173, 42, 33);
 }
 
 #output {
     position: absolute;
-    top: 375px;
+    top: 290px;
     right: 0;
     left: 1000px;
     width: 300px;
-    height: 200px;
+    height: 150px;
     border: 3px solid rgb(173, 42, 33);
 }
 
@@ -33,18 +33,7 @@
     position: absolute;
     border: 3px solid blue;
     left: 1030px;
-    top: 320px;
-    font-size: 18px;
-    color: blue;
-    background-color: #e7e7e7;
-    color: black;
-}
-
-#second_button {
-    position: absolute;
-    border: 3px solid blue;
-    left: 1150px;
-    top: 320px;
+    top: 240px;
     font-size: 18px;
     color: blue;
     background-color: #e7e7e7;

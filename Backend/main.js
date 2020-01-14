@@ -21,7 +21,7 @@ async function compile(code, input) {
         }
     }
     catch (err) {
-        console.log(err);
+        // console.log(err);
         return { "status": 0, "final": result };
     }
 }
@@ -41,7 +41,7 @@ async function run(code, input) {
 
     }
     catch (err) {
-        console.log(err);
+        // console.log(err);
         return { "status": 0, "final": result };
     }
 }

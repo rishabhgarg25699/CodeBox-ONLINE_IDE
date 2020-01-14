@@ -17,11 +17,12 @@ route.post('/', async function (req, res) {
     }
     else if (result.status === 1) {
         console.log("compiled with errors in code");
+        // console.log(result);
         res.send(result.final);
     }
     else {
         console.log("--------------successfully compile---------------");
-        console.log(result);
+        // console.log(result);
         let result2 = await main.run(code, input);
         if (result2.status === 0) {
             console.log("error while running the code");
@@ -33,11 +34,11 @@ route.post('/', async function (req, res) {
         }
         else {
             console.log("-------------------successfully run---------------------");
-            console.log(result2.final);
+            // console.log(result2.final);
             res.send(result2.final);
         }
     }
-    // res.end();
+    res.end();
 })
 
 module.exports = route;
