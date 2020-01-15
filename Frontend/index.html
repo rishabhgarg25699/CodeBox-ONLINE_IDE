@@ -9,12 +9,39 @@
 </head>
 
 <body style="background-color: burlywood;" class="container">
+
     <center style="font-size: large;">
         <br>
         <h1><u><b><i>IDE FOR C++ LANGUAGE</i></b></u></h1>
     </center>
+
+    <div id="theme"
+        style="background-color: lightgrey; width: 690px; height: 50px; border: 2px solid green; padding: 10px; margin: 10px;">
+        <div class="dropdown">
+            <button style="font-size: small; padding: 5px 5px;" class="btn btn-secondary dropdown-toggle" type="button"
+                id="dropdownMenuButton" data-toggle="dropdown">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+        <div class="dropdown" style="position: absolute; right: 550px; top: 95px;">
+            <button style="font-size: small; padding: 5px 5px;" class="btn btn-secondary dropdown-toggle" type="button"
+                id="dropdownMenuButton" data-toggle="dropdown">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+    </div>
+
     <center>
-        <!-- EDITOR ID IS HERE -->
         <div id="editor">#include&#x3c;bits/stdc++.h&#x3e;
 using namespace std;
 #define ll long long int
@@ -39,8 +66,35 @@ int main()
     </center>
     <textarea type="textbabel-polyfill" id="input" placeholder="Enter input here"></textarea>
     <textarea type="text" id="output" placeholder="Output will go here"></textarea>
-    <button type="button" class="btn btn-success" id="first_button">Compile And Run Program</button>
-    
+    <button type="button" class="btn btn-success" id="first_button">
+        <h5>Compile And Run Program</h5>
+    </button>
+    <div style="position: absolute;top: 480px;left: 850px;">
+        <h5><b>Time(SEC)</b></h5>
+    </div>
+    <div style="position: absolute;top: 480px;left: 970px;">
+        <h5><b>Memory(KB)</b></h5>
+    </div>
+    <div style="position: absolute;top: 480px;left: 1120px;">
+        <h5><b>Web-Link(Sharable)</b></h5>
+    </div>
+
+    <div style="position: absolute;top: 500px;left: 840px;width: 500px;height: 150px;">
+        <hr style="border: 1px solid black;">
+    </div>
+    <div id="time" style="position: absolute;top: 530px;left: 860px;">
+    </div>
+    <div id="memory" style="position: absolute;top: 530px;left: 990px;">
+    </div>
+    <div id="save" style="position: absolute;top: 530px;left: 1070px;">
+    </div>
+
+    <div id="copyright">
+        <font color="white"> © Designed and Developed by <a href="https://www.linkedin.com/in/rishabh-garg-662597146/"
+                target="_blank">RISHABH
+                GARG </font>
+    </div>
+
     <script src="app.js" type="text/javascript" charset="utf-8"></script>
     <script src="index.js"> </script>
 </body>
