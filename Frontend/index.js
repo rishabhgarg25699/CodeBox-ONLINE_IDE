@@ -6,6 +6,8 @@ let outputbox = $('#output');
 let time = $('#time');
 let memory = $('#memory');
 let share = $('#save');
+let writelang = $('#write_lang');
+let my_editor = $('#editor');
 
 let wait = "Please wait, Your code is in process phase .......";
 
@@ -14,16 +16,28 @@ let language1 = "C++";
 $("#java").click(function () {
     editor.session.setMode("ace/mode/java");
     language1 = "JAVA";
+    writelang.empty();
+    writelang.append('<h6>  JAVA </h6>');
+    // my_editor.empty();
+    // my_editor.append(``)
 });
 
 $("#c").click(function () {
     editor.session.setMode("ace/mode/c_cpp");
     language1 = "C++"
+    writelang.empty();
+    writelang.append('<h6>  C++ </h6>');
+    // my_editor.empty();
+    // my_editor.append(``)
 });
 
 $("#python").click(function () {
     editor.session.setMode("ace/mode/python");
     language1 = "PYTHON";
+    writelang.empty();
+    writelang.append('<h6> Python </h6>');
+    // my_editor.empty();
+    // my_editor.append(``)
 });
 
 //-------------------THEMES----------------------------------------
