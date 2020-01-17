@@ -7,10 +7,11 @@ config.memory_limit = 323244;
 // config.input = "";
 config.language = "C++";
 
-async function compile(code, input) {
+async function compile(code, input, language) {
     try {
         config.source = code;
         config.input = input;
+        config.language = language;
         let result = JSON.parse(await hackerearth.compile(config));
         if (result.compile_status == "OK") {
             return { "status": 2, "final": result };
@@ -26,10 +27,11 @@ async function compile(code, input) {
     }
 }
 
-async function run(code, input) {
+async function run(code, input, language) {
     try {
         config.source = code;
         config.input = input;
+        config.language = language;
         let result = JSON.parse(await hackerearth.run(config));
         if (result.run_status.status == "AC") {
             return { "status": 2, "final": result };

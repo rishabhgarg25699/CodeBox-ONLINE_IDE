@@ -9,8 +9,9 @@ route.get('/', function (req, res) {
 route.post('/', async function (req, res) {
     code = req.body.task;
     input = req.body.input;
+    language = req.body.language;
 
-    let result = await main.compile(code, input);
+    let result = await main.compile(code, input, language);
     if (result.status === 0) {
         console.log("error while compiling the code");
         res.send(result.final);
@@ -23,7 +24,7 @@ route.post('/', async function (req, res) {
     else {
         console.log("--------------successfully compile---------------");
         // console.log(result);
-        let result2 = await main.run(code, input);
+        let result2 = await main.run(code, input, language);
         if (result2.status === 0) {
             console.log("error while running the code");
             res.send(result2.final);
