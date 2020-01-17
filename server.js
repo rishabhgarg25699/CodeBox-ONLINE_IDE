@@ -15,4 +15,6 @@ server.get('/trial', function (req, res) {
 
 server.use('/todo/', todo);
 
+console.log("Server started at http://localhost:2000/public");
+
 server.listen(port);
