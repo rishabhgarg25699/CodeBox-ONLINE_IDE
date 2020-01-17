@@ -12,14 +12,57 @@ let my_editor = $('#editor');
 let wait = "Please wait, Your code is in process phase .......";
 
 let language1 = "C++";
+
+let custom_position = {
+    row: 0,
+    column: 0
+};
+
+let java_text = `/*package whatever //do not write package name here */
+
+import java.io.*;
+
+class GFG {
+	public static void main (String[] args) {
+		System.out.println("Rishabh!");
+	}
+}`
+
+let cplusplus_text = `#include<bits/stdc++.h>;
+using namespace std;
+#define ll long long int
+#define pb push_back
+#define mp make_pair
+#define nt _int128
+#define inf (int)1e9
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    ll t;
+    // cin >> t;
+    t = 1;
+    while(t--)
+    {
+
+    }
+    return 0;
+}`
+
+let python_text = `#code
+print("Rishabh")`
+
+editor.session.insert(custom_position, cplusplus_text);
+
 // -----------------LANGUAGES--------------------------------
 $("#java").click(function () {
     editor.session.setMode("ace/mode/java");
     language1 = "JAVA";
     writelang.empty();
     writelang.append('<h6>  JAVA </h6>');
-    // my_editor.empty();
-    // my_editor.append(``)
+    editor.setValue("");
+    editor.session.insert(custom_position, java_text);
 });
 
 $("#c").click(function () {
@@ -27,8 +70,8 @@ $("#c").click(function () {
     language1 = "C++"
     writelang.empty();
     writelang.append('<h6>  C++ </h6>');
-    // my_editor.empty();
-    // my_editor.append(``)
+    editor.setValue("");
+    editor.session.insert(custom_position, cplusplus_text);
 });
 
 $("#python").click(function () {
@@ -36,8 +79,8 @@ $("#python").click(function () {
     language1 = "PYTHON";
     writelang.empty();
     writelang.append('<h6> Python </h6>');
-    // my_editor.empty();
-    // my_editor.append(``)
+    editor.setValue("");
+    editor.session.insert(custom_position, python_text);
 });
 
 //-------------------THEMES----------------------------------------
