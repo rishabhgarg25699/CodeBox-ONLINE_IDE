@@ -35,7 +35,7 @@ route.post('/', async function (req, res) {
         }
         else {
             console.log("-------------------successfully run---------------------");
-            // console.log(result2.final);
+            // console.log("Result is " + result2.final.run_status.output);
             res.send(result2.final);
         }
     }

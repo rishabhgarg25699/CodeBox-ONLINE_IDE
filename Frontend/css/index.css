@@ -48,3 +48,99 @@
     font-size: 12px;
     background-color: #000000;
 }
+
+#first {
+    position: absolute; 
+    right: 1125px; 
+    top: 95px;
+}
+
+#theme{
+    background-color: black; 
+    width: 690px; 
+    height: 50px; 
+    border: 2px solid green; 
+    padding: 10px; 
+    margin: 10px;
+}
+
+#dropdownMenuButton{
+    font-size: small; 
+    padding: 5px 5px;
+}
+
+#lange {
+    position: absolute; 
+    right: 1040px; 
+    top: 100px; 
+    color: blanchedalmond;
+}
+
+#write_lang{
+    position: absolute; 
+    right: 990px; 
+    top: 100px; 
+    color: blanchedalmond;
+}
+
+#second{
+    position: absolute; 
+    right: 550px; 
+    top: 95px;
+}
+
+#dropdownMenuButton{
+    font-size: small; 
+    padding: 5px 5px;
+}
+
+#write_theme{
+    position: absolute; 
+    right: 650px; 
+    top: 100px; 
+    color: blanchedalmond;
+}
+
+#t1{
+    position: absolute;
+    top: 480px;
+    left: 850px;
+}
+
+#m1{
+    position: absolute;
+    top: 480px;
+    left: 970px;
+}
+
+#w1{
+    position: absolute;
+    top: 480px;
+    left: 1120px;
+}
+
+#s1{
+    position: absolute;
+    top: 500px;
+    left: 840px;
+    width: 500px;
+    height: 150px;
+}
+
+#time{
+    position: absolute;
+    top: 530px;
+    left: 860px;
+}
+
+#memory{
+    position: absolute;
+    top: 530px;
+    left: 990px;
+}   
+
+#save{
+    position: absolute;
+    top: 530px;
+    left: 1070px;
+}

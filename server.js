@@ -11,6 +11,6 @@ server.use('/', express.static(__dirname + "/Frontend"));
 
 server.use('/todo/', todo);
 
-console.log("Server started at http://localhost:2000/public");
+console.log("Server started at http://localhost:2000/");
 
 server.listen(port);

@@ -34,6 +34,7 @@ async function run(code, input, language) {
         config.language = language;
         let result = JSON.parse(await hackerearth.run(config));
         if (result.run_status.status == "AC") {
+            // console.log("Main.js is " + result.run_status.output);
             return { "status": 2, "final": result };
             // return (result);
         }
