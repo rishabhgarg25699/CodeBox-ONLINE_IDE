@@ -10,82 +10,111 @@
     <script src="bootstrap.min.js"></script>
 </head>
 
-<body style="background-color: burlywood;" class="container">
+<body style="background-color: lightgray;" class="container">
 
-    <center style="font-size: large;">
+    <div style="font-size: large; text-align:center;">
         <br>
         <h1><u><b><i>IDE FOR COMPETITIVE PROGRAMMING</i></b></u></h1>
-    </center>
+    </div>
 
-    <div id="theme">
-        <div class="dropdown" id="first">
-            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown">
-                Languages
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" id="java">JAVA</a>
-                <a class="dropdown-item" id="c">C++</a>
-                <a class="dropdown-item" id="python">Python</a>
+    <div class="row">
+        <div class="col-md-8">
+            <!-- For black strip -->
+            <div class="column">
+                <div id="theme" class="row">
+                    <div class="col-md-5">
+                        <div class="dropdown" id="first">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown">
+                                Languages
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" id="java">JAVA</a>
+                                <a class="dropdown-item" id="c">C++</a>
+                                <a class="dropdown-item" id="python">Python</a>
+                            </div>
+                        </div>
+                        <div id="lange">
+                            <!-- <h6>Language - </h6> -->
+                        </div>
+                        <div id="write_lang">
+                            <h6>C++ </h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-secondary btn-sm" type="button" id="fullscreen">
+                            Full Screen
+                        </button>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="dropdown" id="second">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown">
+                                Themes
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a id="twi" class="dropdown-item">Twilight</a>
+                                <a id="amb" class="dropdown-item">Ambiance</a>
+                                <a id="cha" class="dropdown-item">Chaos</a>
+                                <a id="rome" class="dropdown-item">Chrome</a>
+                                <a id="mid" class="dropdown-item">clouds_midnight</a>
+                                <a id="clo" class="dropdown-item">clouds</a>
+                            </div>
+                        </div>
+                        <div id="write_theme">
+                            <h6>Themes</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- --------------------------- -->
+            <div style="text-align:center;">
+                <div id="editor"></div>
             </div>
         </div>
-        <div id="lange">
-            <h6>Language - </h6>
-        </div>
-        <div id="write_lang">
-            <h6>C++ </h6>
-        </div>
-        <div class="dropdown" id="second">
-            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown">
-                Themes
+        <div class="col-md-4">
+            <br>
+            <textarea type="textbabel-polyfill" id="input" placeholder="Enter input here"></textarea>
+
+            <button type="button" class="btn btn-success mx-auto mb-2" id="first_button">
+                <h5>Compile And Run Program</h5>
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a id="twi" class="dropdown-item">Twilight</a>
-                <a id="amb" class="dropdown-item">Ambiance</a>
-                <a id="cha" class="dropdown-item">Chaos</a>
-                <a id="rome" class="dropdown-item">Chrome</a>
-                <a id="mid" class="dropdown-item">clouds_midnight</a>
-                <a id="clo" class="dropdown-item">clouds</a>
+
+            <textarea type="text" id="output" placeholder="Output will go here"></textarea>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="t1">
+                        <h5><b>Time(SEC)</b></h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="m1">
+                        <h5><b>Memory(KB)</b></h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="w1">
+                        <h5><b>Web-Link(Sharable)</b></h5>
+                    </div>
+                </div>
             </div>
+            <div id="s1">
+                <hr style="border: 1px solid black;">
+            </div>
+            <div id="time">
+            </div>
+            <div id="memory">
+            </div>
+            <div id="save">
+            </div>
+
+            <!-- <div id="copyright">
+                <font color="white"> © Designed and Developed by <a
+                        href="https://www.linkedin.com/in/rishabh-garg-662597146/" target="_blank">RISHABH
+                        GARG </font>
+            </div> -->
         </div>
-        <div id="write_theme">
-            <h6>Themes</h6>
-        </div>
-    </div>
-
-    <center>
-        <div id="editor"></div>
-    </center>
-    <textarea type="textbabel-polyfill" id="input" placeholder="Enter input here"></textarea>
-    <textarea type="text" id="output" placeholder="Output will go here"></textarea>
-    <button type="button" class="btn btn-success" id="first_button">
-        <h5>Compile And Run Program</h5>
-    </button>
-    <div id="t1">
-        <h5><b>Time(SEC)</b></h5>
-    </div>
-    <div id="m1">
-        <h5><b>Memory(KB)</b></h5>
-    </div>
-    <div id="w1">
-        <h5><b>Web-Link(Sharable)</b></h5>
-    </div>
-
-    <div id="s1">
-        <hr style="border: 1px solid black;">
-    </div>
-    <div id="time">
-    </div>
-    <div id="memory">
-    </div>
-    <div id="save">
-    </div>
-
-    <div id="copyright">
-        <font color="white"> © Designed and Developed by <a href="https://www.linkedin.com/in/rishabh-garg-662597146/"
-                target="_blank">RISHABH
-                GARG </font>
     </div>
 
     <script src="app.js" type="text/javascript" charset="utf-8"></script>

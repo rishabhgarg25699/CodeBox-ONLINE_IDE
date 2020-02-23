@@ -8,6 +8,7 @@ let memory = $('#memory');
 let share = $('#save');
 let writelang = $('#write_lang');
 let my_editor = $('#editor');
+let full_screen = $('#fullscreen')
 
 let wait = "Please wait, Your code is in process phase .......";
 
@@ -83,6 +84,9 @@ $("#python").click(function () {
     editor.session.insert(custom_position, python_text);
 });
 
+$("#fullscreen").click(function () {
+    editor.container.webkitRequestFullscreen()
+})
 //-------------------THEMES----------------------------------------
 $("#twi").click(function () {
     editor.setTheme("ace/theme/twilight");
