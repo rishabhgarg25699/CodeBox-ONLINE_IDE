@@ -16,7 +16,7 @@
     /* left: 850px; */
     /* width: 400px; */
     height: 150px;
-    width: 400px;
+    width: 100%;
     border: 3px solid rgb(173, 42, 33);
 }
 
@@ -27,17 +27,21 @@
     /* left: 850px;
     width: 400px; */
     height: 150px;
-    width: 400px;
+    width: 100%;
     border: 3px solid rgb(173, 42, 33);
 }
 
 #first_button {
     display: block;
+    /* position: absolute; */
     border: 3px solid blue;
+    /* left: 930px;
+    top: 250px; */
     font-size: 18px;
     color: blue;
     background-color: #e7e7e7;
     color: black;
+    margin: auto auto 5px auto;
 }
 
 #copyright {
