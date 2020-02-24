@@ -74,3 +74,9 @@
 #s1{
     height: 150px;;
 }
+
+.scrollable-menu {
+    height: auto;
+    max-height: 100px;
+    overflow-x: hidden;
+}
