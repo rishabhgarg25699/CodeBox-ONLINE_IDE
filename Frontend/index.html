@@ -10,15 +10,21 @@
     <script src="bootstrap.min.js"></script>
 </head>
 
-<body style="background-color: lightgray;" class="container">
+<body style="background-color: lightgray;" class="container-fluid">
 
     <div style="font-size: large; text-align:center;">
         <br>
-        <h1><u><b><i>IDE FOR COMPETITIVE PROGRAMMING</i></b></u></h1>
+        <h1>
+            <u>
+                <strong>
+                    <em>IDE FOR COMPETITIVE PROGRAMMING</em>
+                </strong>
+            </u>
+        </h1>
     </div>
 
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12 col-lg-7">
             <!-- For black strip -->
             <div class="column">
                 <div id="theme" class="row">
@@ -35,7 +41,7 @@
                             </div>
                         </div>
                         <div id="lange">
-                            <!-- <h6>Language - </h6> -->
+                            <h6>Language - </h6>
                         </div>
                         <div id="write_lang">
                             <h6>C++ </h6>
@@ -72,18 +78,15 @@
                 <div id="editor"></div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-12 col-lg-5">
             <br>
             <textarea type="textbabel-polyfill" id="input" placeholder="Enter input here"></textarea>
-
-            <button type="button" class="btn btn-success mx-auto mb-2" id="first_button">
-                <h5>Compile And Run Program</h5>
+            <button type="button" class="btn btn-success" id="first_button">
+                <h5 style="margin: 0;">Compile And Run Program</h5>
             </button>
-
             <textarea type="text" id="output" placeholder="Output will go here"></textarea>
-
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div id="t1">
                         <h5><b>Time(SEC)</b></h5>
                     </div>
@@ -93,7 +96,7 @@
                         <h5><b>Memory(KB)</b></h5>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div id="w1">
                         <h5><b>Web-Link(Sharable)</b></h5>
                     </div>
@@ -102,12 +105,9 @@
             <div id="s1">
                 <hr style="border: 1px solid black;">
             </div>
-            <div id="time">
-            </div>
-            <div id="memory">
-            </div>
-            <div id="save">
-            </div>
+            <div id="time"></div>
+            <div id="memory"></div>
+            <div id="save"></div>
 
             <!-- <div id="copyright">
                 <font color="white"> © Designed and Developed by <a
