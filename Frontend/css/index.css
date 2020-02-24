@@ -76,6 +76,7 @@
 }
 
 .scrollable-menu {
+    cursor: pointer;
     height: auto;
     max-height: 100px;
     overflow-x: hidden;
