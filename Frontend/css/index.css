@@ -1,31 +1,16 @@
 #editor {
-    /* position: absolute;
-    top: 150px;  */
-    /* right: 800; */
-    /* left: 1000; */
-    /* width: 700px; */
-    height: 500px;
+    height: 480px;
     font-size: large;
     border: 3px solid #73AD21;
 }
 
 #input {
-    /* position: absolute;
-    top: 85px; */
-    /* right: 0; */
-    /* left: 850px; */
-    /* width: 400px; */
     height: 150px;
     width: 100%;
     border: 3px solid rgb(173, 42, 33);
 }
 
 #output {
-    /* position: absolute;
-    top: 310px; */
-    /* right: 0; */
-    /* left: 850px;
-    width: 400px; */
     height: 150px;
     width: 100%;
     border: 3px solid rgb(173, 42, 33);
@@ -33,10 +18,7 @@
 
 #first_button {
     display: block;
-    /* position: absolute; */
     border: 3px solid blue;
-    /* left: 930px;
-    top: 250px; */
     font-size: 18px;
     color: blue;
     background-color: #e7e7e7;
@@ -45,25 +27,16 @@
 }
 
 #copyright {
-    /* position: absolute; */
-    /* border: 2px solid blue; */
-    /* top: 644px;
-    left: 1103px; */
     font-size: 12px;
     background-color: #000000;
 }
 
 #first {
     display: inline-block;
-    /* position: absolute; 
-    right: 1125px; 
-    top: 95px; */
 }
 
 #theme{
     background-color: black; 
-    /* width: 690px; 
-    height: 50px;  */
     border: 2px solid green; 
     padding: 10px; 
     margin: 10px;
@@ -76,25 +49,16 @@
 
 #lange {
     display: inline-block;
-    /* position: absolute; 
-    right: 1040px; 
-    top: 100px;  */
     color: blanchedalmond;
 }
 
 #write_lang{
     display: inline-block;
-    /* position: absolute; 
-    right: 990px; 
-    top: 100px;  */
     color: blanchedalmond;
 }
 
 #second{
     display: inline-block;
-    /* position: absolute; 
-    right: 550px; 
-    top: 95px; */
 }
 
 #dropdownMenuButton{
@@ -104,53 +68,10 @@
 
 #write_theme{
     display: inline-block;
-    /* position: absolute; 
-    right: 650px; 
-    top: 100px;  */
-    
     color: blanchedalmond;
 }
 
-/* #t1{
-    position: absolute;
-    top: 480px;
-    left: 850px;
-}
-
-#m1{
-    position: absolute;
-    top: 480px;
-    left: 970px;
-}
-
-#w1{
-    position: absolute;
-    top: 480px;
-    left: 1120px;
-} */
-
 #s1{
-    /* position: absolute;
-    top: 500px;
-    left: 840px;
-    width: 500px; */
     height: 150px;;
 }
 
-/* #time{
-    position: absolute;
-    top: 530px;
-    left: 860px;
-}
-
-#memory{
-    position: absolute;
-    top: 530px;
-    left: 990px;
-}   
-
-#save{
-    position: absolute;
-    top: 530px;
-    left: 1070px;
-} */
