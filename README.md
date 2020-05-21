@@ -19,13 +19,14 @@ Desktop View             |  Mobile View
 ![](Photoes/Desktop.png)  |  ![](Photoes/mobile.jpg)
 
 
-## Help Contributing Guides :crown:
+## Help Contributing Guides :bangbang:
 
 I love to have different `issues` and `pull request` for the betterment of this project.
 
 Please discuss it with me first, before creating any pull request [new-issue](https://github.com/rishabhgarg25699/CodeBox-ONLINE_IDE/issues/new).
 
 :tada: :confetti_ball: :smiley: _**Happy Contributing**_ :smiley: :confetti_ball: :tada:
+
 
 ## Contact With Me :busts_in_silhouette:
 
