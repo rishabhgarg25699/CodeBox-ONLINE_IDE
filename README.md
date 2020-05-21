@@ -13,8 +13,22 @@ Tools/Technologies: JavaScript, NodeJS, HTML, CSS, Jquery , Javascript , Bootstr
 5. Open the browser with this link http://localhost:2000/
 ```
 
-## Screenshots
+## Screenshots :crown:
 Desktop View             |  Mobile View
 :-------------------------:|:-------------------------:
 ![](Photoes/Desktop.png)  |  ![](Photoes/mobile.jpg)
+
+
+## Help Contributing Guides :crown:
+
+I love to have different `issues` and `pull request` for the betterment of this project.
+
+Please discuss it with me first, before creating any pull request [new-issue](https://github.com/rishabhgarg25699/CodeBox-ONLINE_IDE/issues/new).
+
+:tada: :confetti_ball: :smiley: _**Happy Contributing**_ :smiley: :confetti_ball: :tada:
+
+## Contact With Me :busts_in_silhouette:
+
+- Telegram - https://t.me/Rishabhhello
+- Gitter - https://gitter.im/rishabhgarg25699
 
