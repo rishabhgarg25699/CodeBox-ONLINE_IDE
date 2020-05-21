@@ -8,7 +8,7 @@ Tools/Technologies: JavaScript, NodeJS, HTML, CSS, Jquery , Javascript , Bootstr
 ```sh
 1. Clone this repository
 2. Open the terminal where this repository is downloaded.
-3. Make sure you have javascript compiler and npm installed in your computer.
+3. Make sure you have javascript compiler and npm installed in your system.
 4. Now run this command npm install
 5. Open the browser with this link http://localhost:2000/
 ```
