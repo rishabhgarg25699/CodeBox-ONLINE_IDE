@@ -13,4 +13,9 @@ Tools/Technologies: JavaScript, NodeJS, HTML, CSS, Jquery , Javascript , Bootstr
 5. Open the browser with this link http://localhost:2000/
 ```
 
-This is an responsive site
+## Screenshots
+<p float="left">
+  <img src="Photoes/Desktop.png" width="520" height="500" />
+  <img src="Photoes/mobile.jpg" width="320" height="500" /> 
+</p>
+
