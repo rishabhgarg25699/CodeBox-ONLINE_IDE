@@ -1,3 +1,9 @@
+let socket = io();
+socket.on('connected', () => {
+    console.log("Connected " + socket.id)
+})
+
+
 var editor = ace.edit("editor");
 editor.setTheme("ace/theme/twilight");
 editor.session.setMode("ace/mode/c_cpp");
@@ -23,9 +29,9 @@ let java_text = `/*package whatever //do not write package name here */
 import java.io.*;
 
 class GFG {
-	public static void main (String[] args) {
-		System.out.println("Rishabh!");
-	}
+    public static void main (String[] args) {
+        System.out.println("Rishabh!");
+    }
 }`
 
 let cplusplus_text = `#include<bits/stdc++.h>;
@@ -112,7 +118,28 @@ $("#clo").click(function () {
     editor.setTheme("ace/theme/clouds");
 });
 
-//-----------------------MAIN AJAX---------------------------------------
+$("#cri").click(function () {
+    editor.setTheme("ace/theme/crimson_editor");
+});
+
+$("#ecl").click(function () {
+    editor.setTheme("ace/theme/eclipse");
+});
+
+$("#mer").click(function () {
+    editor.setTheme("ace/theme/merbivore");
+});
+
+$("#nord").click(function () {
+    editor.setTheme("ace/theme/nord_dark");
+});
+
+$("#sol").click(function () {
+    editor.setTheme("ace/theme/solarized_dark");
+});
+
+
+//--------------------- MAIN LOGIC ---------------------------------
 $("#first_button").click(function () {
     let code = editor.getValue();
     let input1 = inputbox.val();
@@ -121,22 +148,45 @@ $("#first_button").click(function () {
     memory.empty();
     share.empty();
     outputbox.append(wait);
-    // console.log(input);
-    $.post('/todo/', { task: code, input: input1, language: language1 }, function (data) {
-        console.log("--------------------------");
-        console.log(data);
-        // console.log(data.run_status.output);
+    // console.log(code);
+    socket.emit('send', {
+        task: code,
+        input: input1,
+        language: language1
+    })
+
+    socket.on('rcv', function (data) {
+        // console.log("index.js " + data.code_id + " " + socket.id + " " + "Hello" + data.run_status.output);
         if (data.compile_status === "OK") {
             outputbox.empty();
+            time.empty();
             outputbox.append(data.run_status.output);
-            time.append('<h6>' + data.run_status.time_used + '<h6>');
-            memory.append('<h6>' + data.run_status.memory_used + '<h6>');
-            share.append('<h6>' + data.web_link + '<h6>');
+            time.replaceWith('<h6>' + data.run_status.time_used + '<h6>');
+            memory.replaceWith('<h6>' + data.run_status.memory_used + '<h6>');
+            share.replaceWith('<h6>' + data.code_id + '<h6>');
         }
         else {
             outputbox.empty();
             outputbox.append(data.compile_status);
         }
     })
+
+    // console.log(input);
+    // $.post('/todo/', { task: code, input: input1, language: language1 }, function (data) {
+    //     console.log("--------------------------");
+    //     console.log(data);
+    //     // console.log(data.run_status.output);
+    //     if (data.compile_status === "OK") {
+    //         outputbox.empty();
+    //         outputbox.append(data.run_status.output);
+    //         time.append('<h6>' + data.run_status.time_used + '<h6>');
+    //         memory.append('<h6>' + data.run_status.memory_used + '<h6>');
+    //         share.append('<h6>' + data.web_link + '<h6>');
+    //     }
+    //     else {
+    //         outputbox.empty();
+    //         outputbox.append(data.compile_status);
+    //     }
+    // })
 })
 

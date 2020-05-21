@@ -12,17 +12,15 @@ async function compile(code, input, language) {
         config.source = code;
         config.input = input;
         config.language = language;
-        let result = JSON.parse(await hackerearth.compile(config));
+        let result = await JSON.parse(await hackerearth.compile(config));
         if (result.compile_status == "OK") {
             return { "status": 2, "final": result };
-            // return (result);
         }
         else {
             return { "status": 1, "final": result };
         }
     }
     catch (err) {
-        // console.log(err);
         return { "status": 0, "final": result };
     }
 }
@@ -32,19 +30,19 @@ async function run(code, input, language) {
         config.source = code;
         config.input = input;
         config.language = language;
-        let result = JSON.parse(await hackerearth.run(config));
+        let result = await JSON.parse(await hackerearth.run(config));
         if (result.run_status.status == "AC") {
-            // console.log("Main.js is " + result.run_status.output);
             return { "status": 2, "final": result };
-            // return (result);
         }
         else {
+
+            console.log("bahar " + result);
             return { "status": 1, "final": result };
         }
 
     }
     catch (err) {
-        // console.log(err);
+        console.log("aaja choosle");
         return { "status": 0, "final": result };
     }
 }
