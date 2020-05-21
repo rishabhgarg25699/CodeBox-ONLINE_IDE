@@ -27,6 +27,10 @@ Please discuss it with me first, before creating any pull request [new-issue](ht
 
 :tada: :confetti_ball: :smiley: _**Happy Contributing**_ :smiley: :confetti_ball: :tada:
 
+## Features to be added :arrow_up:
+- Live Editing in the text editor in which more that one person can edit the code at the same time.
+- Submissions Page - Last Compile And Run Code will be present in the site
+- Login And Logout - Site secured by Login and Logout authentication using Passport.js
 
 ## Contact With Me :busts_in_silhouette:
 
