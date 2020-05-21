@@ -14,8 +14,7 @@ Tools/Technologies: JavaScript, NodeJS, HTML, CSS, Jquery , Javascript , Bootstr
 ```
 
 ## Screenshots
-<p float="left">
-  <img src="Photoes/Desktop.png" width="520" height="500" />
-  <img src="Photoes/mobile.jpg" width="320" height="500" /> 
-</p>
+Desktop View             |  Mobile View
+:-------------------------:|:-------------------------:
+![](Photoes/Desktop.png)  |  ![](Photoes/mobile.jpg)
 
