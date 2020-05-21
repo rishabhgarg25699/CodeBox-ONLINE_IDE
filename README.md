@@ -3,7 +3,7 @@ This online IDE is based on JavaScript/NodeJS which supports C++/JAVA/Python lan
 
 Tools/Technologies: JavaScript, NodeJS, HTML, CSS, Jquery , Javascript , Bootstrap , AJAX, Socket.
 
-How To Run Locally
+## How To Run Locally
 1. Clone this repository
 2. Open the terminal where this repository is downloaded.
 3. Make sure you have javascript compiler and npm installed in your computer.
