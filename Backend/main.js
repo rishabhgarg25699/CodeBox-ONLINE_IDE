@@ -42,7 +42,6 @@ async function run(code, input, language) {
 
     }
     catch (err) {
-        console.log("aaja choosle");
         return { "status": 0, "final": result };
     }
 }
