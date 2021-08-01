@@ -1,5 +1,5 @@
 var hackerearth = require('hackerearth-node');
-var hackerearth = new hackerearth('203157672c819e6d5ca8ace68ad81fbe08758ba6');
+var hackerearth = new hackerearth('b54d164310f3e54bf8cc10e53c8619b395bfab1f');
 
 var config = {};
 config.time_limit = 2;
